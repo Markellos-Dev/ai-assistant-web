@@ -21,7 +21,7 @@ db.init_app(app)
 CORS(app)
 
 # Groq API key
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "generate you own API KEY"
 
 # -------------------- Routes --------------------
 
