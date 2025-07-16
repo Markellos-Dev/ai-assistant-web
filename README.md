@@ -1,69 +1,79 @@
-# AI Assistant Web Application
+AI Assistant Web Application
+This is a personal project built to explore web development, user authentication, API integration, and persistent data storage. The application provides a local, browser-based chat interface that supports user login, conversation history, and optional voice output. Everything runs locally on the user's machine without requiring external servers.
 
-This project is a web-based AI assistant that allows users to interact with an AI model via a simple chat interface. It supports persistent conversation history, user authentication, and optional speech synthesis. The backend is built using Flask and stores data locally using SQLite. The application is designed for local deployment and runs entirely on the user's machine.
+Features
+User registration and login with secure password authentication
 
-## Features
+Multiple chat threads per user
 
-- User registration and login with password authentication
-- Multiple conversation threads per user
-- Persistent chat history saved in a local SQLite database
-- Integration with the Groq API (LLaMA3 model) for generating AI responses
-- Optional speech synthesis using the Web Speech API
-- Dark mode user interface
-- Secure automatic logout after inactivity
-- Frontend built with HTML/CSS/JS and backend with Python Flask
+Persistent message history stored in a local SQLite database
 
-## Tech Stack
+Integration with a language model API to generate responses
 
-- Backend: Flask (Python)
-- Frontend: HTML, CSS, JavaScript
-- Database: SQLite
-- API Integration: Groq API (llama3-70b-8192)
-- Optional: SpeechSynthesis (browser-based)
+Optional voice output using browser-based speech synthesis
 
-## Installation
+Dark mode interface
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your_username/ai-assistant-web.git
-   cd ai-assistant-web
-   ```
+Auto logout after inactivity for better security
 
-2. Create and activate a virtual environment:
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate     # On Windows
-   source venv/bin/activate  # On macOS/Linux
-   ```
+Built using Python (Flask), HTML, CSS, and JavaScript
 
-3. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Tech Stack
+Backend: Flask (Python)
 
-4. Set your Groq API key in the environment:
-   ```bash
-   set GROQ_API_KEY=your_key_here   # Windows
-   export GROQ_API_KEY=your_key_here # macOS/Linux
-   ```
+Frontend: HTML, CSS, JavaScript
 
-5. Run the app:
-   ```bash
-   python server.py
-   ```
+Database: SQLite
 
-6. Open your browser and go to:
-   ```
-   http://localhost:5000
-   ```
+API Integration: Language model API
 
-## Screenshots
+Other: Web Speech API (optional)
 
-*(You can include a screenshot of the UI here if available)*
+Installation
+Clone the repository:
 
-## Directory Structure
+bash
+Copy
+Edit
+git clone https://github.com/your_username/ai-assistant-web.git
+cd ai-assistant-web
+Set up a virtual environment:
 
-```
+bash
+Copy
+Edit
+python -m venv venv
+venv\Scripts\activate     # On Windows
+source venv/bin/activate  # On macOS/Linux
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Set your API key:
+
+bash
+Copy
+Edit
+set API_KEY=your_key_here         # On Windows
+export API_KEY=your_key_here      # On macOS/Linux
+Run the application:
+
+bash
+Copy
+Edit
+python server.py
+Open your browser and visit:
+
+arduino
+Copy
+Edit
+http://localhost:5000
+Directory Overview
+cpp
+Copy
+Edit
 ai-assistant-web/
 ├── static/
 ├── templates/
@@ -72,15 +82,14 @@ ai-assistant-web/
 ├── requirements.txt
 ├── README.md
 └── ...
-```
+Possible Future Enhancements
+Add speech-to-text support
 
-## Future Improvements
+Implement user profile settings
 
-- Speech-to-text support for full voice interaction
-- Profile settings for users
-- Deployment on cloud platforms
-- Support for multilingual chat (e.g., Greek)
+Cloud deployment support
 
-## License
+Enable multilingual conversations
 
-This project is open for review as part of a job application and is not yet licensed for commercial use.
+Notes
+This project was created as a way to apply and strengthen web development skills and is part of a learning portfolio. It is not licensed for commercial use.
